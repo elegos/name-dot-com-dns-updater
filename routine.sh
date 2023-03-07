@@ -14,8 +14,7 @@ record_id=$(echo ${current_entry}|jq -c '.id'|sed 's/"//g')
 current_ip="$(dig +short txt ch whoami.cloudflare @1.0.0.1|sed 's/"//g')"
 
 if [ "${record_ip}" = "${current_ip}" ]; then
-    echo "Addresses are the same"
-    echo $record_ip $current_ip
+    echo "Address is already updated (${record_ip})"
     exit 0
 fi
 

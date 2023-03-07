@@ -16,4 +16,4 @@ fi
 
 /routine.sh
 
-crond -f
+crond -f -c /appdaemon
