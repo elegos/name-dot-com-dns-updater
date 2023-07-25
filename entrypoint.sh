@@ -19,4 +19,5 @@ echo "NAME_DOT_COM_TOKEN=${NAME_DOT_COM_TOKEN}" >> /appdaemon/.env
 echo "DOMAIN_NAME=${DOMAIN_NAME}" >> /appdaemon/.env
 echo "DOMAIN_NAME_HOST=${DOMAIN_NAME_HOST}" >> /appdaemon/.env
 
+/routine.sh
 yacron -c /appdaemon/yacron.yml
