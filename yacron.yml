@@ -1,0 +1,6 @@
+jobs:
+  - name: routine
+    command: /routine.sh
+    shell: /bin/sh
+    schedule: "*/15 * * * *"
+    env_file: /appdaemon/.env
